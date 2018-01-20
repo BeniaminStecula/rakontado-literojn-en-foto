@@ -1,0 +1,1 @@
+print('Nie znaleziono liter na zdjęciu.')
