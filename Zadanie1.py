@@ -27,7 +27,7 @@ def main():
 	print ("1.\nLiczba próbek: {0}\nIlość atrybutów: {1}\n".format (dane.data_amount, iris.row_len))
 
 	# 2
-	print ("2.\nPróbka nr 10: {0}\nPróbka nr 75: {1}\nOdległość Euklidesowa: {2}\n".format (dane[9], dane[74], dane[10].eucliD_to (dane[75])))
+	print ("2.\nPróbka nr 10: {0}\nPróbka nr 75: {1}\nOdległość Euklidesowa: {2}\n".format (dane[9], dane[74], dane[9].eucliD_to (dane[74])))
 
 	# 3
 	print ("3.")
