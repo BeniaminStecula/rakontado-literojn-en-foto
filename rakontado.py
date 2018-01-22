@@ -61,7 +61,8 @@ def load_ocr_data(path):
     #create list of all files ending in.jpg
     imlist = [os.path.join(path, f) for f in os.listdir(path) if f.endswith(".jpg")]
     #create labels "1" "A"-nazwa litery
-    labels = [int(imfile.split("/")[-1][0]) for imfile in imlist]
+    labels = [int(imfile.split("/")[-1][0:2]) for imfile in imlist]
+    print(labels)
     #create features from the images
     features = []
     for imname in imlist:
@@ -94,8 +95,8 @@ print(np.count_nonzero((np.array(test_labels) - pred)))
 print(100*((len(test_labels) - np.count_nonzero((np.array(test_labels) - pred))) / (1.0*len(test_labels))))
 
 #Reading sudoku
-imname = "sudoku/sudoku23.JPG"
-vername = "sudoku/sudoku23.sud"
+imname = "sudoku/sudoku2.JPG"
+vername = "sudoku/sudoku2.sud"
 
 im = np.array(Image.open(imname).convert("L"))
 
