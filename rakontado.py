@@ -94,8 +94,8 @@ print(np.count_nonzero((np.array(test_labels) - pred)))
 print(100*((len(test_labels) - np.count_nonzero((np.array(test_labels) - pred))) / (1.0*len(test_labels))))
 
 #Reading sudoku
-imname = "sudoku/sudoku24.JPG"
-vername = "sudoku/sudoku24.sud"
+imname = "sudoku/sudoku23.JPG"
+vername = "sudoku/sudoku23.sud"
 
 im = np.array(Image.open(imname).convert("L"))
 
@@ -124,7 +124,7 @@ print(sudoku)
 jest = 0
 for i in range(len(sudoku)):
     for j in range(len(sudoku[0])):
-        if sudoku[i][j]==1:
+        if (sudoku[i][j]>0 and sudoku[i][j]<31):
             jest+=1
 print(jest)
 
