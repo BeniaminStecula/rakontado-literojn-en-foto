@@ -11,7 +11,7 @@
 11. Zaproponować postać funkcji klasyfikujących dla problemu klasyfikacyjnego dla dwóch klas i dwuwymiarowej przestrzeni cech przy założeniu, że elementy klasy 1 znajdują się w drugiej, a elementy klasy 2 w czwartej ćwiartce układu współrzędnych. Podać wzór określający powierzchnię decyzyjną tego klasyfikatora.
 12. Wygenerować przykładowy zbiór danych testowych (po 10 próbek na klasę) dla problemu z poprzedniego zadania. Dokonać testowania zaproponowanego klasyfikatora.
 
-Ilość próbek | Ilość atrybutów | Brakujące wartości | Problem
------------- | --------------- | ------------------ | -------
-150 | 5 | nie | klasyfikacja
+Ilość próbek | Ilość atrybutów | Brakujące wartości |   Problem
+------------ | --------------- | ------------------ | ------------
+150          |        5        |         nie        | klasyfikacja
 
